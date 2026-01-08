@@ -92,7 +92,7 @@
           <p class="text-[50px]">refine the noise into crystal-clear signals</p>
           <div class="mt-40">
             <img
-              src="/AI-signal-processing.svg"
+              src="/Ai-signal-processing.svg"
               alt="All SignalWise Features"
               class="rounded-lg object-cover w-full" />
             <div class="px-40">
