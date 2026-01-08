@@ -30,6 +30,7 @@
               <NuxtImg
                 src="/Hero.svg"
                 alt="SignalWise Dashboard"
+                provider="static"
                 class="rounded-lg object-cover h-[600px] w-full hidden md:block" />
               <div
                 class="absolute inset-0 rounded-lg"
@@ -59,7 +60,10 @@
         </div>
       </div>
     </section>
-    <section id="whychooseus" aria-label="Why Choose Us Section" class="px-10 md:px-0">
+    <section
+      id="whychooseus"
+      aria-label="Why Choose Us Section"
+      class="px-10 md:px-0">
       <p class="md:py-10 text-[18px] text-center md:text-left">
         Why choose Us?
       </p>
@@ -198,7 +202,9 @@
                 </p>
 
                 <div class="flex font-semibold mt-2">
-                  <p class="text-5xl lg:text-7xl">${{ Math.floor(pkg.price) }}</p>
+                  <p class="text-5xl lg:text-7xl">
+                    ${{ Math.floor(pkg.price) }}
+                  </p>
                   <div class="flex flex-col gap-1 items-start justify-end">
                     <p class="text-2xl lg:text-4xl">
                       .{{ pkg.price.toFixed(2).split(".")[1] }}
@@ -244,7 +250,9 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="text-center pt-[90vh] md:pt-0 mb-20 px-10 lg:px-0">
+    <section
+      id="contact"
+      class="text-center pt-[90vh] md:pt-0 mb-20 px-10 lg:px-0">
       <h2 class="text-2xl md:text-[80px] font-light leading-tight text-white">
         Want to Know More?
       </h2>
