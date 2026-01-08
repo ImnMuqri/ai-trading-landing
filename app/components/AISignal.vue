@@ -120,7 +120,7 @@
             Get instant, executable insights tailored for your strategy
           </p>
           <div class="mt-10">
-            <img
+            <NuxtImg
               src="/Trade-outputs.svg"
               alt="All SignalWise Features"
               class="rounded-lg object-cover w-full" />
