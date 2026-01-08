@@ -41,7 +41,7 @@
       </p>
     </div>
     <section id="features" class="mt-12 md:mt-40 px-4 md:px-0">
-      <img
+      <NuxtImg
         src="/AI-signal-feature.svg"
         alt="All SignalWise Features"
         class="rounded-lg object-cover w-full" />

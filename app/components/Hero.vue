@@ -153,7 +153,7 @@
       </p>
       <div
         class="p-6 md:p-20 flex flex-col md:flex-row justify-between gap-6 items-end">
-        <img
+        <NuxtImg
           src="/SystemPC.svg"
           alt="Signal Wise system"
           class="rounded-lg object-cover md:h-[300px] md:w-[550px]" />
