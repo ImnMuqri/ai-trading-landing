@@ -91,7 +91,7 @@
           </h2>
           <p class="text-[50px]">refine the noise into crystal-clear signals</p>
           <div class="mt-40">
-            <NuxtImg
+            <img
               src="/AI-signal-processing.svg"
               alt="All SignalWise Features"
               class="rounded-lg object-cover w-full" />
@@ -120,7 +120,7 @@
             Get instant, executable insights tailored for your strategy
           </p>
           <div class="mt-10">
-            <NuxtImg
+            <img
               src="/Trade-outputs.svg"
               alt="All SignalWise Features"
               class="rounded-lg object-cover w-full" />
