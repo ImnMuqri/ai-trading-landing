@@ -27,10 +27,9 @@
             class="relative w-full flex flex-wrap flex-col items-center justify-center">
             <!-- Background Image -->
             <div class="absolute -top-16 left-1/2 -translate-x-1/2 -z-5 w-full">
-              <NuxtImg
+              <img
                 src="/Hero.svg"
                 alt="SignalWise Dashboard"
-                provider="static"
                 class="rounded-lg object-cover h-[600px] w-full hidden md:block" />
               <div
                 class="absolute inset-0 rounded-lg"
