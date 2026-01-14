@@ -7,10 +7,10 @@
           <h1 class="text-[80px] leading-tight">Contact Us</h1>
           <div class="grid grid-cols-1 text-[12px] gap-2">
             <p>
-              Email, call, or complete the form to learn how SignalWise can help
+              Email, call, or complete the form to learn how bullise can help
               your trading journey
             </p>
-            <p>support@signalwise.com</p>
+            <p>support@bullise.com</p>
             <p>111-111-111</p>
           </div>
         </div>

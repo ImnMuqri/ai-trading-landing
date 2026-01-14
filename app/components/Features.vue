@@ -16,7 +16,7 @@
             class="absolute -top-16 left-1/2 -translate-x-1/2 -z-5 w-full h-[500px] overflow-hidden">
             <img
               src="/Screen.svg"
-              alt="SignalWise Dashboard"
+              alt="bullise Dashboard"
               class="rounded-lg object-cover h-[700px] w-full" />
             <div
               class="absolute inset-0 rounded-lg"
@@ -43,7 +43,7 @@
     <section id="features" class="mt-12 md:mt-40 px-4 md:px-0">
       <img
         src="/AI-signal-feature.svg"
-        alt="All SignalWise Features"
+        alt="All bullise Features"
         class="rounded-lg object-cover w-full" />
     </section>
     <section

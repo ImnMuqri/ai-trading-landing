@@ -6,15 +6,15 @@
 
 <script setup>
 useSeoMeta({
-  title: "Contact – SignalWise AI Trading Platform",
+  title: "Contact – Bullise AI Trading Platform",
   description:
-    "Get in touch with the SignalWise team to learn more about AI trading signals and how we can help you trade smarter.",
-  ogTitle: "Contact – SignalWise AI Trading Platform",
-  ogDescription: "Reach out to the team behind SignalWise AI Trading Platform.",
+    "Get in touch with the bullise team to learn more about AI trading signals and how we can help you trade smarter.",
+  ogTitle: "Contact – Bullise AI Trading Platform",
+  ogDescription: "Reach out to the team behind bullise AI Trading Platform.",
   ogType: "website",
   ogImage: "/contact-social-preview.png",
   ogUrl: "https://yourdomain.com",
-  ogSiteName: "SignalWise",
+  ogSiteName: "Bullise",
   twitterCard: "summary_large_image",
   twitterSite: "@yourtwitterhandle",
 });

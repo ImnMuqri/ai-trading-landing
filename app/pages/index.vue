@@ -6,13 +6,13 @@
 
 <script setup>
 useSeoMeta({
-  title: "SignalWise AI Trading Platform",
+  title: "Bullise AI Trading Platform",
   description: "Automated AI trading platform built for consistent growth.",
-  ogTitle: "SignalWise AI Trading Platform",
+  ogTitle: "Bullise AI Trading Platform",
   ogDescription: "Automated AI trading platform built for consistent growth.",
   ogType: "website",
   ogUrl: "https://yourdomain.com",
-  ogSiteName: "SignalWise",
+  ogSiteName: "Bullise",
 });
 
 useHead({
@@ -23,7 +23,7 @@ useHead({
       children: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        name: "SignalWise AI Trading Platform",
+        name: "bullise AI Trading Platform",
         operatingSystem: "Web",
         applicationCategory: "FinanceApplication",
         url: "https://yourdomain.com",

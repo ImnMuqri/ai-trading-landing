@@ -9,7 +9,7 @@
         : 'bg-[#0B071E]',
     ]">
     <div class="max-w-7xl mx-auto text-center text-[12px] text-white">
-      SignalWise provides analytical information and market signals for
+      bullise provides analytical information and market signals for
       informational purposes only. It does not constitute financial, investment,
       trading, or legal advice, nor an offer or solicitation to buy or sell any
       financial instrument. Users should conduct their own research and consult
@@ -18,7 +18,10 @@
     <div class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-6 gap-8">
       <!-- Logo / Branding -->
       <div class="col-span-2">
-        <h2 class="text-white font-bold italic text-xl mb-2">SIGNALWISE</h2>
+        <img
+          src="/BulliseLogo.svg"
+          alt="Bullise Logo"
+          class="rounded-lg h-fit w-[150px] mb-2" />
         <p class="text-sm">
           TrueProTech delivers smart, real-time risk management and monitoring
           tools for brokerages.
@@ -89,18 +92,23 @@
       <!-- Social / Contact -->
       <div>
         <h3 class="text-white font-semibold mb-2">Contact Us</h3>
-        <p class="text-[12px]">support@signalwise.com</p>
+        <p class="text-[12px]">support@bullise.com</p>
       </div>
       <div>
         <h3 class="text-white font-semibold mb-2">Legal</h3>
-        <p class="text-[12px]">Privacy Policy</p>
-        <p class="text-[12px]">Terms of Use</p>
+        <div class="grid grid-cols-1">
+          <NuxtLink to="/disclaimer" class="text-[12px]"> Disclaimer </NuxtLink>
+          <NuxtLink to="/privacy" class="text-[12px]">
+            Privacy Policy
+          </NuxtLink>
+          <NuxtLink to="/terms" class="text-[12px]"> Terms Of Use </NuxtLink>
+        </div>
       </div>
     </div>
 
     <div
       class="border-t border-white mt-8 py-4 mx-[5%] text-center text-gray-500 text-[15px] text-white">
-      &copy; {{ new Date().getFullYear() }} SignalWise. All rights reserved.
+      &copy; {{ new Date().getFullYear() }} Bullise. All rights reserved.
     </div>
   </footer>
 </template>

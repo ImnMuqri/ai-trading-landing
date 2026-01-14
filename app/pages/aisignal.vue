@@ -6,15 +6,15 @@
 
 <script setup>
 useSeoMeta({
-  title: "AI Engine – SignalWise AI Trading Platform",
+  title: "AI Engine – Bullise AI Trading Platform",
   description:
     "Learn more about AI trading signals and how we can help you trade smarter.",
-  ogTitle: "AI Engine – SignalWise AI Trading Platform",
-  ogDescription: "Learn the technology behind SignalWise AI Trading Platform.",
+  ogTitle: "AI Engine – Bullise AI Trading Platform",
+  ogDescription: "Learn the technology behind bullise AI Trading Platform.",
   ogType: "website",
   ogImage: "/AI-Engine-social-preview.png",
   ogUrl: "https://yourdomain.com",
-  ogSiteName: "SignalWise",
+  ogSiteName: "Bullise",
   twitterCard: "summary_large_image",
   twitterSite: "@yourtwitterhandle",
 });

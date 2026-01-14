@@ -3,7 +3,7 @@
   <div class="grid gap-40 max-w-5xl mx-auto">
     <section
       id="home"
-      aria-label="SignalWise Home Section"
+      aria-label="bullise Home Section"
       class="min-h-screen flex items-center justify-center px-6">
       <div class="max-w-5xl text-center md:min-h-[650px]">
         <h1
@@ -29,7 +29,7 @@
             <div class="absolute -top-16 left-1/2 -translate-x-1/2 -z-5 w-full">
               <img
                 src="/Hero.svg"
-                alt="SignalWise Dashboard"
+                alt="bullise Dashboard"
                 class="rounded-lg object-cover h-[600px] w-full hidden md:block" />
               <div
                 class="absolute inset-0 rounded-lg"

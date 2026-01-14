@@ -79,7 +79,7 @@
             No detail is overlooked, every input fuels smarter decisions.
           </p>
         </div>
-        <div id="signal" aria-label="SignalWise Ai Features">
+        <div id="signal" aria-label="bullise Ai Features">
           <div class="flex items-center justify-center gap-4 text-[#3CFFE8]">
             <p>AI Signal Processing</p>
             <span class="h-4 border border-[#3CFFE8]"></span>
@@ -93,7 +93,7 @@
           <div class="mt-40">
             <img
               src="/Ai-signal-processing.svg"
-              alt="All SignalWise Features"
+              alt="All bullise Features"
               class="rounded-lg object-cover w-full" />
             <div class="px-40">
               <div
@@ -109,7 +109,7 @@
             </div>
           </div>
         </div>
-        <div id="outputs" aria-label="SignalWise Trade Outputs">
+        <div id="outputs" aria-label="bullise Trade Outputs">
           <div class="flex items-center justify-center gap-4 text-[#3CFFE8]">
             <p>Trade Outputs</p>
             <span class="h-4 border border-[#3CFFE8]"></span>
@@ -122,7 +122,7 @@
           <div class="mt-10">
             <img
               src="/Trade-outputs.svg"
-              alt="All SignalWise Features"
+              alt="All bullise Features"
               class="rounded-lg object-cover w-full" />
           </div>
         </div>
