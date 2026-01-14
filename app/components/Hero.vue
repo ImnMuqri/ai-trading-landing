@@ -177,20 +177,20 @@
         Plans that fits your strategy
       </h2>
       <div class="mt-12 flex flex-wrap justify-around gap-6 h-[450px]">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div
             v-for="pkg in subscriptionPackages"
             :key="pkg.name"
             class="p-[2px] rounded-xl"
             :class="[
-              pkg.name == 'Elite'
+              pkg.name == 'Pro'
                 ? 'bg-gradient-to-t from-[#00000000] to-[#3CFFE8]'
                 : 'bg-gradient-to-t from-[#0B071E] to-[#9966FF]',
             ]">
             <div
               class="flex flex-col justify-between text-left p-8 rounded-xl h-full"
               :class="[
-                pkg.name == 'Elite'
+                pkg.name == 'Pro'
                   ? 'bg-gradient-to-br from-[#0B071E] to-[#3CFFE8]/30'
                   : 'bg-gradient-to-br from-[#0B071E] to-[#9966FF]/30',
               ]">
@@ -212,34 +212,42 @@
                   </div>
                 </div>
 
-                <p class="text-gray-400 italic text-[12px] mt-2">
+                <!-- <p class="text-gray-400 italic text-[12px] mt-2">
                   {{ pkg.billedAnnually }}
-                </p>
+                </p> -->
 
-                <p class="py-6 text-gray-300 text-[12px] sm:text-md">
-                  {{ pkg.description }}
-                </p>
+                <div class="py-6 text-[12px] sm:text-md space-y-2">
+                  <div
+                    v-for="(feature, index) in pkg.features"
+                    :key="index"
+                    class="flex items-start gap-2">
+                    <Icon
+                      name="mdi:check-circle"
+                      class="text-emerald-400 text-sm mt-[2px]" />
+                    <span>{{ feature }}</span>
+                  </div>
+                </div>
               </div>
 
               <div
                 class="p-[2px] rounded-full w-full"
                 :class="[
-                  pkg.name == 'Elite'
+                  pkg.name == 'Pro'
                     ? 'bg-gradient-to-t from-[#181430] to-[#3CFFE8]'
                     : 'bg-gradient-to-t from-[#181430] to-[#4B3F96]',
                 ]">
                 <button
                   class="z-10 w-full px-8 py-3 rounded-full font-medium text-white text-[12px] lg:text-sm hover:opacity-90 transition"
                   :class="[
-                    pkg.name == 'Elite'
+                    pkg.name == 'Pro'
                       ? 'bg-gradient-to-r  from-[#3CFFE8] to-[#181430]'
                       : 'bg-gradient-to-r from-[#9966FF] to-[#181430]',
                   ]">
                   {{
-                    pkg.name === "Starter"
+                    pkg.name === "Basic"
                       ? "Get Started"
-                      : pkg.name === "Elite"
-                      ? "Unlock Elite Access"
+                      : pkg.name === "Pro"
+                      ? "Unlock Pro Access"
                       : "Unlock Pro Access"
                   }}
                 </button>
@@ -269,28 +277,34 @@
 <script setup>
 const subscriptionPackages = [
   {
-    name: "Starter",
-    price: 12.99,
+    name: "Basic",
+    price: 15,
     period: "/month",
     billedAnnually: "Billed annually at $155.88/year",
-    description:
-      "Perfect for new traders who want guidance without complexity.",
+    features: [
+      "Up to 5 AI signal requests per day",
+      "Personalized AI market intelligence",
+      "Live market sentiment and trend indicators",
+      "Real time financial news and headlines",
+      "AI curated economic events calendar",
+      "Global market overview dashboards",
+      "Professional grade equity research",
+    ],
   },
   {
-    name: "Professional",
-    price: 29.5,
+    name: "Pro",
+    price: 30,
     period: "/month",
     billedAnnually: "Billed annually at $354.00/year",
-    description:
-      "Designed for traders who want deeper insights and faster decision-making.",
-  },
-  {
-    name: "Elite",
-    price: 59.0,
-    period: "/month",
-    billedAnnually: "Billed annually at $708.00/year",
-    description:
-      "The complete package for serious traders seeking maximum control and performance.",
+    features: [
+      "Up to 15 AI signal requests per day",
+      "Personalized AI market intelligence",
+      "Live market sentiment and trend indicators",
+      "Real time financial news and headlines",
+      "AI curated economic events calendar",
+      "Global market overview dashboards",
+      "Professional grade equity research",
+    ],
   },
 ];
 </script>
