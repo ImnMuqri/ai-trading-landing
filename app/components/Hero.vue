@@ -3,7 +3,7 @@
     <section
       id="home"
       aria-label="bullise Home Section"
-      class="min-h-screen flex items-center justify-center px-6">
+      class="pt-40 md:pt-0 md:min-h-screen flex items-center justify-center px-6">
       <div class="max-w-5xl text-center md:min-h-[650px]">
         <h1
           class="md:h-24 text-5xl md:text-[100px] font-semibold leading-tight">
