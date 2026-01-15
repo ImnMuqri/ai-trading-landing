@@ -1,7 +1,8 @@
 <template>
   <header class="fixed top-0 left-0 w-full z-50 backdrop-blur h-20">
     <nav
-      class="mx-auto px-6 md:px-20 h-20 flex items-center justify-between relative">
+      class="mx-auto px-6 md:px-20 h-20 flex items-center justify-between relative"
+      :class="mobileMenuOpen ? 'bg-black' : ''">
       <!-- Logo -->
       <img
         src="/BulliseLogo.svg"
@@ -73,18 +74,18 @@
       </button>
 
       <!-- Mobile Menu Overlay -->
-      <transition name="fade">
+      <!-- <transition name="fade">
         <div
           v-if="mobileMenuOpen"
           class="fixed inset-0 bg-black/60 backdrop-blur-sm z-40"
           @click="toggleMobileMenu"></div>
-      </transition>
+      </transition> -->
 
       <!-- Mobile Menu -->
       <transition name="slide-down">
         <div
           v-if="mobileMenuOpen"
-          class="fixed top-20 left-0 w-full bg-[#1A1C20] z-50 flex flex-col items-center py-6 gap-6">
+          class="fixed top-[80px] left-0 w-full bg-black z-50 flex flex-col items-center py-6 gap-6">
           <NuxtLink
             to="/"
             class="text-white text-sm font-medium"
