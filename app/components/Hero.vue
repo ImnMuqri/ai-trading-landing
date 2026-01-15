@@ -1,4 +1,3 @@
-<
 <template>
   <div class="grid gap-40 max-w-5xl mx-auto">
     <section
@@ -142,31 +141,118 @@
     </section>
     <section
       id="features"
-      class="text-center px-10 md:px-0"
+      class="text-center px-6 md:px-0"
       aria-label="Features Section">
       <h2
         class="text-4xl font-semibold md:font-normal md:text-[100px] leading-tight bg-gradient-to-r from-[#3CFFE8] to-[#FFFFFF] bg-clip-text text-transparent">
-        Behind the briliance
+        Behind the brilliance
       </h2>
-      <p>
+
+      <p class="mt-4">
         The tools that power clarity, speed, and confidence in your decisions.
       </p>
-      <div
-        class="p-6 md:p-20 flex flex-col md:flex-row justify-between gap-6 items-end">
-        <img
-          src="/SystemPC.svg"
-          alt="Signal Wise system"
-          class="rounded-lg object-cover md:h-[300px] md:w-[550px]" />
-        <div class="px-2 text-left">
-          <p class="text-[#3CFFE8] text-lg md:text-xl">Accessible for you</p>
-          <p class="text-[#3CFFE8] text-xl md:text-3xl font-semibold">
-            Wherever Whenever
-          </p>
-          <p class="text-sm mt-2 md:mt-8">
-            A unified experience designed to follow you everywhere. Log in from
-            any device and stay fully in control without missing a moment.
-          </p>
-        </div>
+      <div class="relative w-full max-w-5xl mx-auto overflow-hidden">
+        <ClientOnly>
+          <Swiper
+            :modules="[Pagination, Autoplay]"
+            :slides-per-view="1"
+            :space-between="50"
+            :autoplay="{
+              delay: 5000,
+              disableOnInteraction: false,
+            }"
+            :pagination="{ clickable: true }"
+            :observer="true"
+            :observe-parents="true"
+            :watch-overflow="true"
+            class="w-full">
+            <SwiperSlide>
+              <div
+                class="p-6 md:p-20 mt-20 flex flex-col md:flex-row gap-6 items-center">
+                <img
+                  src="/SystemPC.svg"
+                  alt="Signal Wise system"
+                  class="rounded-lg object-cover md:h-[300px] md:w-[550px]" />
+                <div class="px-2 text-left">
+                  <p class="text-[#3CFFE8] text-lg md:text-xl">
+                    Accessible for you
+                  </p>
+                  <p class="text-[#3CFFE8] text-xl md:text-3xl font-semibold">
+                    Wherever Whenever
+                  </p>
+                  <p class="text-sm mt-2 md:mt-6">
+                    A unified experience designed to follow you everywhere. Log
+                    in from any device and stay fully in control without missing
+                    a moment.
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                class="p-6 md:p-20 flex flex-col md:flex-row gap-6 items-center">
+                <img
+                  src="/Signal-Insight.svg"
+                  alt="Signal Insight"
+                  class="rounded-lg object-cover md:h-[550px] md:w-[550px]" />
+                <div class="px-2 text-left">
+                  <p class="text-[#3CFFE8] text-lg md:text-xl">
+                    Signal the Moment
+                  </p>
+                  <p class="text-[#3CFFE8] text-xl md:text-3xl font-semibold">
+                    Win the Move
+                  </p>
+                  <p class="text-sm mt-2 md:mt-6">
+                    Get real time trading signals for your chosen instruments
+                    and timeframes. Clear alerts help you act fast and stay
+                    ahead.
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div
+                class="p-6 md:p-20 flex flex-col md:flex-row gap-6 items-center">
+                <img
+                  src="/Detailed-analysis.svg"
+                  alt="Bullise analysis example"
+                  class="rounded-lg object-cover md:h-[600px] md:w-[600px]" />
+                <div class="px-2 text-left">
+                  <p class="text-[#3CFFE8] text-lg md:text-3xl">
+                    Turning Signals into Strategy
+                  </p>
+                  <p class="text-sm mt-2 md:mt-6">
+                    Convert signals into smarter strategies with clear market
+                    sentiment, bullish, bearish, or neutral, shown in precise
+                    percentages.
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div
+                class="p-6 md:p-20 mt-10 flex flex-col md:flex-row gap-6 items-center">
+                <img
+                  src="/News-timing.svg"
+                  alt="Bullise news analysis"
+                  class="rounded-lg object-cover md:h-[400px] md:w-[650px]" />
+                <div class="px-2 text-left">
+                  <p class="text-[#3CFFE8] text-lg md:text-xl">Decoding News</p>
+                  <p class="text-[#3CFFE8] text-xl md:text-3xl font-semibold">
+                    Timing Markets
+                  </p>
+                  <p class="text-sm mt-2 md:mt-6">
+                    Trade with confidence using data driven news analysis.
+                    Historical insights and forecasts help you anticipate market
+                    moves.
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </ClientOnly>
       </div>
     </section>
     <section
@@ -275,6 +361,11 @@
 </template>
 
 <script setup>
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+
 const subscriptionPackages = [
   {
     name: "Basic",
@@ -309,4 +400,22 @@ const subscriptionPackages = [
 ];
 </script>
 
-<style lang="scss" scoped></style>
+<style>
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: white;
+  opacity: 1;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #3cffe8;
+  transform: scale(1.5);
+}
+</style>
