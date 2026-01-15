@@ -151,7 +151,8 @@
       <p class="mt-4">
         The tools that power clarity, speed, and confidence in your decisions.
       </p>
-      <div class="relative w-full max-w-5xl mx-auto overflow-hidden">
+      <div
+        class="relative w-full max-w-sm md:max-w-5xl mx-auto overflow-hidden">
         <ClientOnly>
           <Swiper
             :modules="[Pagination, Autoplay]"
@@ -345,7 +346,7 @@
     </section>
     <section
       id="contact"
-      class="text-center pt-[90vh] md:pt-0 mb-20 px-10 lg:px-0">
+      class="text-center pt-[500px] md:pt-0 mb-20 px-10 lg:px-0">
       <h2 class="text-2xl md:text-[80px] font-light leading-tight text-white">
         Want to Know More?
       </h2>
