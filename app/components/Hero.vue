@@ -52,7 +52,7 @@
 
             <!-- Text -->
             <div class="text-[11px] z-10 text-center mt-2">
-              <p class="">No forced trades.</p>
+              <p class="font-semibold">No forced trades.</p>
               <p>Signals are generated only when market conditions align.</p>
             </div>
           </div>

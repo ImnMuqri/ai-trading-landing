@@ -144,7 +144,7 @@
           </div>
 
           <div class="mt-4 text-[15px]">
-            <p>No forced trades.</p>
+            <p class="font-semibold">No forced trades.</p>
             <p>Signals are generated only when market conditions align.</p>
           </div>
         </div>
