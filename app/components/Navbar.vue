@@ -32,6 +32,15 @@
         </NuxtLink>
 
         <NuxtLink
+          to="/aisignal"
+          class="relative group px-1 transition-colors duration-300"
+          :class="{ 'text-white': route.path === '/aisignal' }">
+          Ai Signals
+          <span
+            class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#3CFFE8] transition-all duration-300"
+            :class="{ 'w-full': route.path === '/aisignal' }"></span>
+        </NuxtLink>
+        <NuxtLink
           to="/contact"
           class="relative group px-1 transition-colors duration-300"
           :class="{ 'text-white': route.path === '/contact' }">
@@ -99,6 +108,12 @@
             Features
           </NuxtLink>
           <NuxtLink
+            to="/aisignal"
+            class="text-white text-sm font-medium"
+            @click="toggleMobileMenu">
+            Ai Signal
+          </NuxtLink>
+          <NuxtLink
             to="/contact"
             class="text-white text-sm font-medium"
             @click="toggleMobileMenu">
@@ -147,7 +162,9 @@ watch(mobileMenuOpen, (isOpen) => {
 }
 
 .slide-down-enter-active {
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 .slide-down-enter-from {
   transform: translateY(-20px);
@@ -158,7 +175,9 @@ watch(mobileMenuOpen, (isOpen) => {
   opacity: 1;
 }
 .slide-down-leave-active {
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 .slide-down-leave-to {
   transform: translateY(-20px);

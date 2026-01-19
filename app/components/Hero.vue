@@ -172,7 +172,7 @@
                 class="p-6 md:p-20 mt-20 flex flex-col md:flex-row gap-6 items-center">
                 <img
                   src="/SystemPC.svg"
-                  alt="Signal Wise system"
+                  alt="Bullise system"
                   class="rounded-lg object-cover md:h-[300px] md:w-[550px]" />
                 <div class="px-2 text-left">
                   <p class="text-[#3CFFE8] text-lg md:text-xl">

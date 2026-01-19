@@ -1,10 +1,10 @@
 <template>
-  <div class="pt-40 text-center">
+  <div class="pt-32 md:pt-40 pb-20 text-center">
     <div
       class="flex flex-col md:flex-row justify-center items-center md:items-start gap-12">
       <div class="grid grid-cols-1 gap-4 md:gap-12 text-left px-10 md:px-0">
         <div>
-          <h1 class="text-[80px] leading-tight">Contact Us</h1>
+          <h1 class="text-4xl md:text-[80px] leading-tight mb-2">Contact Us</h1>
           <div class="grid grid-cols-1 text-[12px] gap-2">
             <p>
               Email, call, or complete the form to learn how bullise can help
