@@ -20,7 +20,28 @@ useSeoMeta({
 });
 
 useHead({
-  link: [{ rel: "canonical", href: "https://yourdomain.com/aisignal" }],
+  script: [
+    {
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        name: "AI Engine – Bullise AI Trading Platform",
+        description:
+          "Learn more about AI trading signals and how we can help you trade smarter.",
+        url: "https://yourdomain.com/aisignal",
+        image: "https://yourdomain.com/AI-Engine-social-preview.png",
+        publisher: {
+          "@type": "Organization",
+          name: "Bullise",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://yourdomain.com/logo.png",
+          },
+        },
+      }),
+    },
+  ],
 });
 </script>
 

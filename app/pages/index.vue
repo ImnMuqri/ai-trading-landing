@@ -23,7 +23,7 @@ useHead({
       children: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        name: "bullise AI Trading Platform",
+        name: "Bullise AI Trading Platform",
         operatingSystem: "Web",
         applicationCategory: "FinanceApplication",
         url: "https://yourdomain.com",

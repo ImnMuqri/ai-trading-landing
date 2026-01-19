@@ -9,7 +9,7 @@ useSeoMeta({
   title: "Features – Bullise AI Trading Platform",
   description:
     "Explore the AI trading platform features designed to give traders actionable signals with confidence and risk awareness.",
-  ogTitle: "bullise Features – Bullise AI Trading Platform",
+  ogTitle: "Bullise Features – Bullise AI Trading Platform",
   ogDescription:
     "Discover the AI trading features for smarter trading decisions.",
   ogType: "website",
@@ -21,7 +21,28 @@ useSeoMeta({
 });
 
 useHead({
-  link: [{ rel: "canonical", href: "https://yourdomain.com/features" }],
+  script: [
+    {
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        name: "Features – Bullise AI Trading Platform",
+        description:
+          "Explore the AI trading platform features designed to give traders actionable signals with confidence and risk awareness.",
+        url: "https://yourdomain.com/features",
+        image: "https://yourdomain.com/features-social-preview.png",
+        publisher: {
+          "@type": "Organization",
+          name: "Bullise",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://yourdomain.com/logo.png",
+          },
+        },
+      }),
+    },
+  ],
 });
 </script>
 
